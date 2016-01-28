@@ -1,18 +1,14 @@
 var input;
 var items = [];
-var count = 0;
 
 while(input != ""){
 	input = prompt("Enter item");
-
-	
+  items.push(input);
 }
 
-
-count = 0;
 var toDisplay = "";
-while(count < items.length){
-	
-	
+for (var i = 1; i < items.length;i++){
+	var line = items[i-1];
+	toDisplay  += i + ". " + line + " \n";
 }
 alert(toDisplay);
